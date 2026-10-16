@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101010"><meta name="color-scheme" content="dark">
+<title>R&G Play — Xtream Codes</title>
+<style>
+:root{color-scheme:dark;--bg:#101010;--panel:#191919;--panel2:#242424;--gold:#e5b94b;--muted:#aaa;--line:#303030}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#f5f5f5;font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:16px clamp(14px,4vw,40px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#141414}
+.brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:22px}.logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(145deg,#f6d879,#b88620);color:#171717;display:grid;place-items:center;font-weight:950}.muted{color:var(--muted);font-size:12px}.pill{border:1px solid #51431f;color:var(--gold);border-radius:99px;padding:5px 10px;font-size:12px}
+main{max-width:1400px;margin:auto;padding:20px clamp(12px,3vw,30px) 36px}
+button,input,select{font:inherit;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:#fff;padding:11px 12px;min-width:0}button{cursor:pointer}button:hover{border-color:var(--gold)}.primary{background:var(--gold);border-color:var(--gold);color:#171717;font-weight:750}.danger{background:#351e1e;border-color:#663838}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:16px;margin-bottom:16px}.card h2{font-size:17px;margin:0 0 12px}.login-grid{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:9px}.login-grid input{width:100%}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.toolbar input{flex:1;min-width:160px}.toolbar select{min-width:150px}
+.layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(270px,1fr);gap:16px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:15px;overflow:hidden}
+.player-wrap{aspect-ratio:16/9;background:#050505;position:relative;display:grid;place-items:center}video{width:100%;height:100%;object-fit:contain;background:#050505}.placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;color:#aaa;pointer-events:none}.playicon{font-size:44px;color:var(--gold)}
+.now{padding:14px 16px}.now h3{margin:0 0 4px;font-size:19px}.panelhead{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 15px;border-bottom:1px solid var(--line)}.panelhead h3{margin:0;font-size:16px}.channel-list{max-height:540px;overflow:auto}.channel{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid #2a2a2a;cursor:pointer}.channel:hover{background:#242424}.channel.active{background:#2b2618;box-shadow:inset 3px 0 var(--gold)}.ch-logo{width:40px;height:40px;border-radius:9px;background:#292929;display:grid;place-items:center;color:var(--gold);font-weight:800;flex-shrink:0;overflow:hidden}.ch-logo img{width:100%;height:100%;object-fit:contain}.ch-info{min-width:0;flex:1}.ch-name{font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ch-group{color:var(--muted);font-size:12px}.status{font-size:12px;color:var(--muted);padding:10px 13px;border-top:1px solid var(--line)}.empty{text-align:center;color:var(--muted);padding:25px 15px}.notice{font-size:12px;color:var(--muted);line-height:1.55}.hidden{display:none!important}
+@media(max-width:850px){.login-grid{grid-template-columns:1fr 1fr}.login-grid input:first-child{grid-column:1/-1}.layout{grid-template-columns:1fr}.channel-list{max-height:380px}}
+/* Android TV / 10-foot layout and remote-control focus */
+@media (min-width: 1000px) and (min-height: 600px) {
+ body{font-size:20px} header{padding:22px 4vw}.brand{font-size:30px}.logo{width:56px;height:56px;font-size:20px}
+ main{max-width:1800px;padding:28px 4vw 48px}.card{padding:22px;margin-bottom:22px;border-radius:20px}.card h2{font-size:24px}
+ button,input,select{font-size:19px;padding:15px 17px;border-radius:12px} .login-grid{gap:12px}
+ .toolbar{gap:12px}.toolbar select,.toolbar input{min-height:56px}.layout{grid-template-columns:minmax(0,1.55fr) minmax(400px,1fr);gap:22px}
+ .panel{border-radius:20px}.player-wrap{min-height:330px}.panelhead{padding:20px}.panelhead h3{font-size:23px}.channel-list{max-height:56vh}.channel{padding:15px 18px;gap:15px;min-height:78px}.ch-logo{width:52px;height:52px}.ch-name{font-size:19px}.ch-group{font-size:15px}.now{padding:20px}.now h3{font-size:26px}.status{font-size:16px;padding:14px 18px}.notice{font-size:15px}
+}
+:focus-visible{outline:3px solid var(--gold)!important;outline-offset:3px;border-color:var(--gold)!important}
+.channel:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{box-shadow:0 0 0 3px #e5b94b55}
+
+</style></head>
+<body>
+<header><div class="brand"><div class="logo">R&G</div><div>R&G Play<div class="muted" style="font-weight:400">Conexão Xtream Codes</div></div></div><span class="pill">TV BOX • PROTÓTIPO 0.3</span></header>
+<main>
+<section class="card">
+<h2>Conectar ao provedor</h2>
+<div class="toolbar" style="margin-bottom:10px"><select id="savedServer" aria-label="Servidor salvo"><option value="">Selecionar servidor salvo…</option></select><button id="saveServerBtn" type="button">Salvar servidor neste dispositivo</button><button id="migrateBtn" type="button">Migrar servidor</button></div>
+<form id="loginForm" class="login-grid" autocomplete="off">
+<input id="server" type="url" placeholder="Servidor (ex.: https://servidor.example:8080)" required aria-label="Endereço do servidor">
+<input id="username" type="text" placeholder="Usuário" required autocomplete="off" aria-label="Usuário">
+<input id="password" type="password" placeholder="Senha" required autocomplete="new-password" aria-label="Senha">
+<button class="primary" type="submit" id="connectBtn">Conectar</button>
+</form>
+<div class="notice" style="margin-top:10px">Digite os dados diretamente aqui no seu dispositivo. Esta versão não salva as credenciais em armazenamento persistente. Use HTTPS quando o provedor oferecer. Não compartilhe capturas de tela que mostrem seus dados.</div>
+</section>
+<div id="migrationPanel" class="card hidden"><h2>Escolher servidor alternativo</h2><p class="notice">Cadastre aqui apenas servidores para os quais você tenha autorização. Cada servidor pode exigir código, usuário e senha próprios.</p><div class="login-grid"><input id="altName" placeholder="Nome (ex.: Servidor 2)" aria-label="Nome do servidor alternativo"><input id="altServer" placeholder="Endereço do servidor" aria-label="Endereço alternativo"><input id="altUser" placeholder="Usuário" aria-label="Usuário alternativo"><input id="altPass" type="password" placeholder="Senha" aria-label="Senha alternativa"><button id="addAltBtn" class="primary" type="button">Adicionar</button></div><div id="serverProfiles" class="channel-list" style="margin-top:10px"></div></div>
+<div id="appArea" class="hidden">
+<div class="toolbar">
+<select id="contentType" aria-label="Tipo de conteúdo"><option value="live">TV ao vivo</option><option value="vod">Filmes</option><option value="series">Séries</option></select>
+<select id="category" aria-label="Categoria"><option value="">Todas as categorias</option></select>
+<input id="search" type="search" placeholder="Buscar conteúdo...">
+<button id="favoritesBtn">☆ Favoritos</button><button id="disconnectBtn" class="danger">Desconectar</button>
+</div>
+<div class="layout">
+<section class="panel"><div class="player-wrap"><video id="video" controls playsinline></video><div class="placeholder" id="placeholder"><div class="playicon">▶</div><strong>R&G Play</strong><span>Escolha um canal para reproduzir.</span></div></div>
+<div class="now"><h3 id="currentTitle">Nenhum conteúdo selecionado</h3><div class="muted" id="currentMeta">Conecte-se ao seu provedor.</div></div><div class="status" id="status">Aguardando conexão.</div></section>
+<section class="panel"><div class="panelhead"><h3 id="listTitle">Conteúdos</h3><span class="muted" id="count">0 itens</span></div><div class="channel-list" id="channelList"><div class="empty">Conecte-se para carregar os conteúdos.</div></div></section>
+</div></div>
+<p class="notice">Compatibilidade: a API Xtream varia entre provedores. Navegadores podem bloquear chamadas por CORS; se isso ocorrer, será necessário integrar a API em um app nativo ou usar uma camada intermediária segura. Não contorne restrições de acesso do provedor. Este protótipo não armazena nem envia credenciais a terceiros por design, mas o servidor do provedor recebe os dados necessários à autenticação.</p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+const $=id=>document.getElementById(id);
+let base='', user='', pass='', allItems=[], categories=[], favorites=new Set(), onlyFav=false, hls=null, activeKey=null, serverProfiles=[];
+const endpoint=(action)=>`${base}/player_api.php?username=${encodeURIComponent(user)}&password=${encodeURIComponent(pass)}&action=${encodeURIComponent(action)}`;
+function status(s){$('status').textContent=s}
+function safeUrl(raw){try{const u=new URL(raw);if(!['http:','https:'].includes(u.protocol))return null;return u.href}catch{return null}}
+function normalizeServer(raw){const u=new URL(raw.trim());if(!['http:','https:'].includes(u.protocol))throw Error('Use um endereço HTTP ou HTTPS válido.');return u.origin+(u.pathname.replace(/\/+$/,''))}
+async function api(action){const res=await fetch(endpoint(action),{method:'GET',headers:{'Accept':'application/json'}});if(!res.ok)throw Error('Servidor respondeu HTTP '+res.status);return await res.json()}
+function idOf(x){return String(x.stream_id??x.series_id??x.id??'')}
+function titleOf(x){return x.name||x.title||'Sem nome'}
+function categoryOf(x){return String(x.category_id??'')}
+function logoOf(x){return x.stream_icon||x.cover||x.icon||''}
+function renderCategories(){const type=$('contentType').value,sel=$('category'),old=sel.value;sel.innerHTML='<option value="">Todas as categorias</option>'+categories.map(c=>`<option value="${esc(String(c.category_id??c.id??''))}">${esc(c.category_name||c.name||'Categoria')}</option>`).join('');if([...sel.options].some(o=>o.value===old))sel.value=old}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(){const q=$('search').value.toLowerCase(),cat=$('category').value;const type=$('contentType').value;const items=allItems.filter(x=>(!q||titleOf(x).toLowerCase().includes(q))&&(!cat||categoryOf(x)===cat)&&(!onlyFav||favorites.has(type+':'+idOf(x))));$('count').textContent=items.length+' itens';$('listTitle').textContent=type==='live'?'Canais ao vivo':type==='vod'?'Filmes':'Séries';const box=$('channelList');if(!items.length){box.innerHTML='<div class="empty">Nenhum item encontrado.</div>';return}
+box.innerHTML=items.map(x=>{const key=type+':'+idOf(x),logo=logoOf(x);return `<div class="channel ${key===activeKey?'active':''}" data-id="${esc(idOf(x))}"><div class="ch-logo">${logo?`<img src="${esc(logo)}" alt="" onerror="this.remove()">`:'▶'}</div><div class="ch-info"><div class="ch-name">${esc(titleOf(x))}</div><div class="ch-group">${esc(x.category_name||'Conteúdo do provedor')}</div></div><button class="star" data-fav="${esc(key)}" aria-label="Favorito">${favorites.has(key)?'★':'☆'}</button></div>`}).join('');
+box.querySelectorAll('.channel').forEach(el=>el.addEventListener('click',e=>{if(e.target.closest('[data-fav]'))return;const item=items.find(x=>idOf(x)===el.dataset.id);if(item)playItem(item,type)}));
+box.querySelectorAll('[data-fav]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();const key=b.dataset.fav;favorites.has(key)?favorites.delete(key):favorites.add(key);render()}))}
+function stopPlayer(){if(hls){hls.destroy();hls=null}const v=$('video');v.pause();v.removeAttribute('src');v.load()}
+function streamUrl(x,type){const id=encodeURIComponent(idOf(x));let ext='ts';if(type==='live')ext='ts';else if(type==='vod'){const raw=x.container_extension||'mp4';ext=/^[a-z0-9]+$/i.test(raw)?raw:'mp4'}else return null;return `${base}/${type==='live'?'live': 'movie'}/${encodeURIComponent(user)}/${encodeURIComponent(pass)}/${id}.${ext}`}
+function playItem(x,type){activeKey=type+':'+idOf(x);$('currentTitle').textContent=titleOf(x);$('currentMeta').textContent=type==='live'?'TV ao vivo':type==='vod'?'Filme':'Série — selecione episódios em uma versão futura';render();if(type==='series'){status('O catálogo de séries foi carregado. A seleção de temporadas e episódios será adicionada na próxima etapa.');return}
+const url=streamUrl(x,type);if(!url){status('Não foi possível montar o endereço deste conteúdo.');return}
+$('placeholder').classList.add('hidden');stopPlayer();const v=$('video');if(type==='live'&&window.Hls&&Hls.isSupported()&&/\.m3u8/i.test(url)){hls=new Hls();hls.loadSource(url);hls.attachMedia(v);hls.on(Hls.Events.MANIFEST_PARSED,()=>v.play().catch(()=>status('Toque em reproduzir.')))}else{v.src=url;v.play().catch(()=>status('Conteúdo selecionado. Se não iniciar, confira o formato e as permissões do provedor.'))}status('Selecionado: '+titleOf(x))}
+async function loadType(){const type=$('contentType').value;status('Carregando catálogo...');$('category').innerHTML='<option value="">Todas as categorias</option>';try{let catsAction,itemsAction;if(type==='live'){catsAction='get_live_categories';itemsAction='get_live_streams'}else if(type==='vod'){catsAction='get_vod_categories';itemsAction='get_vod_streams'}else{catsAction='get_series_categories';itemsAction='get_series'}const [cats,items]=await Promise.all([api(catsAction),api(itemsAction)]);categories=Array.isArray(cats)?cats:[];allItems=Array.isArray(items)?items:[];renderCategories();render();status(`${allItems.length} itens carregados.`)}catch(e){status('Falha ao carregar catálogo: '+e.message+'. O navegador pode bloquear CORS ou a API pode usar endpoints diferentes.');allItems=[];render()}}
+function refreshProfiles(){const sel=$('savedServer');sel.innerHTML='<option value="">Selecionar servidor salvo…</option>'+serverProfiles.map((p,i)=>`<option value="${i}">${esc(p.name)} — ${esc(p.server)}</option>`).join('');const box=$('serverProfiles');box.innerHTML=serverProfiles.length?serverProfiles.map((p,i)=>`<div class="channel"><div class="ch-info"><div class="ch-name">${esc(p.name)}</div><div class="ch-group">${esc(p.server)}</div></div><button type="button" data-use="${i}">Usar</button><button type="button" class="danger" data-remove="${i}">Remover</button></div>`).join(''):'<div class="empty">Nenhum servidor alternativo cadastrado.</div>';box.querySelectorAll('[data-use]').forEach(b=>b.onclick=()=>{const p=serverProfiles[+b.dataset.use];$('server').value=p.server;$('username').value=p.user;$('password').value=p.pass;$('migrationPanel').classList.add('hidden');$('server').focus()});box.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{serverProfiles.splice(+b.dataset.remove,1);refreshProfiles()})}
+$('saveServerBtn').addEventListener('click',()=>{try{const server=normalizeServer($('server').value),u=$('username').value.trim(),pw=$('password').value;if(!u||!pw)throw Error('Preencha servidor, usuário e senha antes de salvar.');const name=prompt('Nome para identificar este servidor:','Meu servidor');if(!name)return;serverProfiles.push({name:name.trim()||'Servidor',server,user:u,pass:pw});refreshProfiles();status('Servidor guardado apenas na memória desta sessão. Não feche a página se quiser mantê-lo nesta versão.') }catch(e){status(e.message)}});
+$('savedServer').addEventListener('change',()=>{const p=serverProfiles[+$('savedServer').value];if(p){$('server').value=p.server;$('username').value=p.user;$('password').value=p.pass}});
+$('migrateBtn').addEventListener('click',()=>{$('migrationPanel').classList.toggle('hidden');refreshProfiles();if(!$('migrationPanel').classList.contains('hidden'))$('altName').focus()});
+$('addAltBtn').addEventListener('click',()=>{try{const name=$('altName').value.trim(),server=normalizeServer($('altServer').value),u=$('altUser').value.trim(),pw=$('altPass').value;if(!name||!u||!pw)throw Error('Preencha nome, servidor, usuário e senha.');serverProfiles.push({name,server,user:u,pass:pw});$('altName').value='';$('altServer').value='';$('altUser').value='';$('altPass').value='';refreshProfiles();status('Servidor alternativo adicionado nesta sessão. Selecione “Usar” e conecte para testar.')}catch(e){status(e.message)}});
+// Remote navigation: arrow keys move between visible focusable controls; Enter activates.
+document.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.key)){const els=[...document.querySelectorAll('button:not(:disabled),input:not(:disabled),select:not(:disabled),.channel:not(.hidden)')].filter(el=>el.getClientRects().length>0);if(!els.length)return;const i=els.indexOf(document.activeElement);if(i<0){els[0].focus();e.preventDefault();return}let n=i;if(e.key==='ArrowRight'||e.key==='ArrowDown')n=(i+1)%els.length;else n=(i-1+els.length)%els.length;els[n].focus();e.preventDefault()}if(e.key==='Escape'&&!$('migrationPanel').classList.contains('hidden'))$('migrationPanel').classList.add('hidden')});
+$('loginForm').addEventListener('submit',async e=>{e.preventDefault();try{base=normalizeServer($('server').value);user=$('username').value.trim();pass=$('password').value;if(!user||!pass)throw Error('Informe usuário e senha.');$('connectBtn').disabled=true;$('connectBtn').textContent='Conectando...';status('Verificando credenciais...');const data=await api('');if(!data||(!data.user_info&&!data.server_info))throw Error('Resposta inesperada da API. Confira o endereço e as credenciais.');if(data.user_info&&String(data.user_info.auth)==='0')throw Error('O provedor não autorizou esta conexão.');$('appArea').classList.remove('hidden');await loadType()}catch(e){status('Não foi possível conectar: '+e.message)}finally{$('connectBtn').disabled=false;$('connectBtn').textContent='Conectar'}});
+$('contentType').addEventListener('change',loadType);$('category').addEventListener('change',render);$('search').addEventListener('input',render);$('favoritesBtn').addEventListener('click',()=>{onlyFav=!onlyFav;$('favoritesBtn').textContent=onlyFav?'★ Ver todos':'☆ Favoritos';render()});
+$('disconnectBtn').addEventListener('click',()=>{stopPlayer();base='';user='';pass='';allItems=[];categories=[];favorites.clear();serverProfiles=[];refreshProfiles();activeKey=null;$('server').value='';$('username').value='';$('password').value='';$('appArea').classList.add('hidden');$('placeholder').classList.remove('hidden');$('currentTitle').textContent='Nenhum conteúdo selecionado';$('currentMeta').textContent='Conecte-se ao seu provedor.';status('Desconectado. As credenciais foram removidas da memória desta página.')});
+</script></body></html>
